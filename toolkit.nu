@@ -8,7 +8,7 @@ export def import-pull-request [
   | http get $"https://api.github.com/repos/($in.user)/($in.repo)/pulls/($in.pull_request_id)"
   let message = $pull_request_data.title
   let user = $pull_request_data.user.login
-  let url = $pull_request_data.head.repo.html_url
+  let url = ($pull_request_data.head.repo.html_url? | default deleted)
   let commit_message = $"($message) \(credit @($user)) <($url)>"
   http get $pull_request_data.diff_url | git apply
   git add -A
