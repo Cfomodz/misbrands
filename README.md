@@ -1,4 +1,4 @@
-![An assortment of various logos that look like other famous brands but actually have their competitors' name](https://pbs.twimg.com/media/EC5sIScWkAIUSen?format=png&name=900x900)
+![An assortment of various logos that look like other famous brands but actually have their competitors' name](https://repository-images.githubusercontent.com/765213285/cb859884-eeb2-462a-a50c-8976873d4cb4)
 
 ## Timeline
 
