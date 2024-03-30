@@ -18,7 +18,10 @@ export def import-pull-request [
 export def update-readme [] {
 "![An assortment of various logos that look like other famous brands but actually have their competitors' name](https://repository-images.githubusercontent.com/765213285/cb859884-eeb2-462a-a50c-8976873d4cb4)
 
-## Timeline
+<details>
+<summary>
+Timeline
+</summary>
 
 - May 2019: @samdbeckham's legendary javascript-java sticker ([website](https://samdbeckham.gitlab.io/javascript_sticker/)) ([tweet](https://twitter.com/samdbeckham/status/1129722966118457344))
 - Aug 2019: @mkrl's misbrand repo ([repo](https://github.com/mkrl/misbrands))
@@ -26,7 +29,12 @@ export def update-readme [] {
 - Feb 2024: @pReya's fork ([repo](https://github.com/pReya/cursed-programming-stickers))
 - Mar 2024: This fork!
 
-## FAQ
+</details>
+
+<details>
+<summary>
+FAQ
+</summary>
 
 ### Can I print these?
 Of course, that's why those are here.
@@ -64,9 +72,14 @@ There are two ways to submit a misbrand:
 
 - Issue: Create an issue on this repo with the image!
 - Pull Request: Click the fork button, add the image to your copy of this repo, go to 'Pull Requests' and click 'New pull requests'
-    - Pleae follow the file and commit conventions below
+    - Please follow the file and commit conventions below
 
-## Naming Convention
+</details>
+
+<details>
+<summary>
+Naming Convention
+</summary>
 
 There are two naming conventions:
 - One for files to make them easier to find and understand
@@ -92,6 +105,8 @@ there is already an `emacs-vim.svg` in the repo. Name your file `emacs-vim-02.sv
     - `{text} in the style of {style} (credit @{user}) <{url}>`
     - Where `{user}` is the user who created the image
     - And `{url}` is the repo/website the image came from
+
+</details>
 "
   | save -f README.md
 }
