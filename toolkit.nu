@@ -16,17 +16,17 @@ export def import-pull-request [
 }
 
 export def update-readme [] {
-"![An assortment of various logos that look like other famous brands but actually have their competitors' name](https://repository-images.githubusercontent.com/765213285/cb859884-eeb2-462a-a50c-8976873d4cb4)
+$"![An assortment of various logos that look like other famous brands but actually have their competitors' name]\(https://repository-images.githubusercontent.com/765213285/cb859884-eeb2-462a-a50c-8976873d4cb4)
 
 <details>
 <summary>
 Timeline
 </summary>
 
-- May 2019: @samdbeckham's legendary javascript-java sticker ([website](https://samdbeckham.gitlab.io/javascript_sticker/)) ([tweet](https://twitter.com/samdbeckham/status/1129722966118457344))
-- Aug 2019: @mkrl's misbrand repo ([repo](https://github.com/mkrl/misbrands))
-- May 2022: @ohmyhub's fork ([repo](https://github.com/ohmyhub/misbrands))
-- Feb 2024: @pReya's fork ([repo](https://github.com/pReya/cursed-programming-stickers))
+- May 2019: @samdbeckham's legendary javascript-java sticker \([website]\(https://samdbeckham.gitlab.io/javascript_sticker/)) \([tweet]\(https://twitter.com/samdbeckham/status/1129722966118457344))
+- Aug 2019: @mkrl's misbrand repo \([repo]\(https://github.com/mkrl/misbrands))
+- May 2022: @ohmyhub's fork \([repo]\(https://github.com/ohmyhub/misbrands))
+- Feb 2024: @pReya's fork \([repo]\(https://github.com/pReya/cursed-programming-stickers))
 - Mar 2024: This fork!
 
 </details>
@@ -49,10 +49,10 @@ repo.
 
 ### How do I make a misbrand?
 To make a misbrand, choose two existing brands. Generally the fanbase for the
-brands have as much overlap (eg: Rust & Golang) and/or contention (eg: Vim & VSCode)
-as possible or the brands have similar market niches (eg: OpenVPN & NordVPN).
+brands have as much overlap \(eg: Rust & Golang) and/or contention \(eg: Vim & VSCode)
+as possible or the brands have similar market niches \(eg: OpenVPN & NordVPN).
 
-Once the two victum brands are chosen. Take the style (eg: theme/design) of one
+Once the two victum brands are chosen. Take the style \(eg: theme/design) of one
 brand and join it with the text of the other brand. Viola!
 
 Check the FAQ for more resources on DIY-ing a misbrand
@@ -63,8 +63,8 @@ Check the FAQ for more resources on DIY-ing a misbrand
 
 ### How do I create an svg?
 
-If you don't know where to start, use Inkscape ([website](https://inkscape.org))
-([gitlab](https://gitlab.com/inkscape/inkscape)). There are tutorials and resources
+If you don't know where to start, use Inkscape \([website]\(https://inkscape.org))
+\([gitlab]\(https://gitlab.com/inkscape/inkscape)). There are tutorials and resources
 online, just search for 'How do I do XYZ in inkscape?'
 
 ### I have a misbrand. How do I contribute?
@@ -102,11 +102,54 @@ there is already an `emacs-vim.svg` in the repo. Name your file `emacs-vim-02.sv
 
 - If you created the image, do whatever you want for the commit message!
 - If you are adding an image you didn't create, structure the message like so:
-    - `{text} in the style of {style} (credit @{user}) <{url}>`
+    - `{text} in the style of {style} \(credit @{user}) <{url}>`
     - Where `{user}` is the user who created the image
     - And `{url}` is the repo/website the image came from
 
 </details>
+
+<details>
+<summary>
+Misbrands
+</summary>
+
+(misbrands-as-md)
+</details>
 "
   | save -f README.md
+}
+
+export def misbrands-as-md [] {
+  misbrands
+  | group-by --to-table text
+  | each {|it|
+    [
+      '<details>'
+      '<summary>'
+      $it.group
+      '</summary>'
+      ''
+      ...($it.items | each { misbrand-as-md })
+      '</details>'
+    ]
+  }
+  | flatten
+  | str join (char newline)
+}
+
+export def misbrand-as-md [] {
+  $"### ($in.style)(char newline)![($in.style)]\(($in.path))(char newline)"
+}
+
+export def misbrands [] {
+  ls *
+  | where name =~ '(png|svg)$'
+  | each {|it|
+    $it.name
+    | parse -r '^(?<text>[^-]+)-(?<style>[^-]+)-?(?<index>\d+)?\.(?<type>.+)$'
+    | get -i 0
+    | default {}
+    | update index { if ($in | is-empty) { 1 } else { into int } }
+    | insert path $it.name
+  }
 }
