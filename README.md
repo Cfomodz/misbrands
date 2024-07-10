@@ -484,6 +484,9 @@ python
 ### cpp
 ![cpp](python-cpp.svg)
 
+### go
+![go](python-go.svg)
+
 ### php
 ![php](python-php.svg)
 
