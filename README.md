@@ -301,6 +301,15 @@ github
 </details>
 <details>
 <summary>
+gitlab
+</summary>
+
+### github
+![github](gitlab-github.svg)
+
+</details>
+<details>
+<summary>
 go
 </summary>
 
