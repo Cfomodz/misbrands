@@ -520,6 +520,15 @@ qt
 </details>
 <details>
 <summary>
+r
+</summary>
+
+### rust
+![rust](r-rust.png)
+
+</details>
+<details>
+<summary>
 racket
 </summary>
 
@@ -573,6 +582,9 @@ rust
 
 ### nodejs
 ![nodejs](rust-nodejs.svg)
+
+### r
+![r](rust-r.png)
 
 </details>
 <details>
