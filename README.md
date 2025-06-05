@@ -5,10 +5,10 @@
 Timeline
 </summary>
 
-- May 2019: @samdbeckham's legendary javascript-java sticker ([website](https://samdbeckham.gitlab.io/javascript_sticker/)) ([tweet](https://twitter.com/samdbeckham/status/1129722966118457344))
-- Aug 2019: @mkrl's misbrand repo ([repo](https://github.com/mkrl/misbrands))
-- May 2022: @ohmyhub's fork ([repo](https://github.com/ohmyhub/misbrands))
-- Feb 2024: @pReya's fork ([repo](https://github.com/pReya/cursed-programming-stickers))
+- May 2019: [@samdbeckham](https://github.com/samdbeckham)'s legendary javascript-java sticker ([website](https://samdbeckham.gitlab.io/javascript_sticker/)) ([tweet](https://twitter.com/samdbeckham/status/1129722966118457344))
+- Aug 2019: [@mkrl](https://github.com/mkrl)'s misbrand repo ([repo](https://github.com/mkrl/misbrands))
+- May 2022: [@ohmyhub](https://github.com/ohmyhub)'s fork ([repo](https://github.com/ohmyhub/misbrands))
+- Feb 2024: [@pReya](https://github.com/pReya)'s fork ([repo](https://github.com/pReya/cursed-programming-stickers))
 - Mar 2024: This fork!
 
 </details>
