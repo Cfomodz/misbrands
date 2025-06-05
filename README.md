@@ -364,6 +364,15 @@ javascript
 </details>
 <details>
 <summary>
+jetbrains
+</summary>
+
+### neovim
+![neovim](jetbrains-neovim.svg)
+
+</details>
+<details>
+<summary>
 jquery
 </summary>
 
