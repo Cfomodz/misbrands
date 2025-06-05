@@ -126,7 +126,7 @@ export def misbrands-as-md [] {
     [
       '<details>'
       '<summary>'
-      $it.group
+      $it.text
       '</summary>'
       ''
       ...($it.items | each { misbrand-as-md })
