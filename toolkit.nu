@@ -1,3 +1,15 @@
+#!/usr/bin/env nu
+
+def --wrapped main [...rest] {
+  const pathToSelf = path self
+  let nameOfSelf = $pathToSelf | path parse | get stem
+  if $rest in [ [-h] [--help] ] {
+    nu -c $'use ($pathToSelf); scope modules | where name == ($nameOfSelf) | get 0.commands.name'
+  } else {
+    nu -c $'use ($pathToSelf); ($nameOfSelf) ($rest | str join (" "))'
+  }
+}
+
 # Given a url to a pull request against a repo in our fork network, then apply the diff and make a commit
 export def import-pull-request [
   pull_request # Url to a pull request (eg <https://github.com/mkrl/misbrands/pull/86>)
