@@ -346,6 +346,15 @@ haskell
 </details>
 <details>
 <summary>
+helix
+</summary>
+
+### neovim
+![neovim](helix-neovim.svg)
+
+</details>
+<details>
+<summary>
 inkscape
 </summary>
 
