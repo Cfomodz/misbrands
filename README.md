@@ -92,7 +92,7 @@ there is already an `emacs-vim.svg` in the repo. Name your file `emacs-vim-02.sv
 
 <details>
 <summary>
-Misbrands
+Misbrands by Text
 </summary>
 
 <details>
@@ -765,6 +765,643 @@ zig
 
 ### php
 ![php](zig-php.svg)
+
+</details>
+</details>
+
+<details>
+<summary>
+Misbrands by Style
+</summary>
+
+<details>
+<summary>
+adobe
+</summary>
+
+### inkscape
+![inkscape](inkscape-adobe.svg)
+
+</details>
+<details>
+<summary>
+angular
+</summary>
+
+### jquery
+![jquery](jquery-angular.svg)
+
+### react
+![react](react-angular.svg)
+
+</details>
+<details>
+<summary>
+apache
+</summary>
+
+### nginx
+![nginx](nginx-apache.svg)
+
+</details>
+<details>
+<summary>
+archlinux
+</summary>
+
+### windowsserver
+![windowsserver](windowsserver-archlinux.svg)
+
+</details>
+<details>
+<summary>
+aws
+</summary>
+
+### azure
+![azure](azure-aws.svg)
+
+</details>
+<details>
+<summary>
+azure
+</summary>
+
+### aws
+![aws](aws-azure.svg)
+
+</details>
+<details>
+<summary>
+bash
+</summary>
+
+### cmd
+![cmd](cmd-bash.svg)
+
+</details>
+<details>
+<summary>
+cpp
+</summary>
+
+### python
+![python](python-cpp.svg)
+
+</details>
+<details>
+<summary>
+css
+</summary>
+
+### counterstrike
+![counterstrike](counterstrike-css.svg)
+
+</details>
+<details>
+<summary>
+dart
+</summary>
+
+### kotlin
+![kotlin](kotlin-dart.svg)
+
+</details>
+<details>
+<summary>
+debian
+</summary>
+
+### ubuntu
+![ubuntu](ubuntu-debian.svg)
+
+</details>
+<details>
+<summary>
+docker
+</summary>
+
+### cargo
+![cargo](cargo-docker.svg)
+
+</details>
+<details>
+<summary>
+eclipse
+</summary>
+
+### emacs
+![emacs](emacs-eclipse.svg)
+
+</details>
+<details>
+<summary>
+elixir
+</summary>
+
+### erlang
+![erlang](erlang-elixir.png)
+
+</details>
+<details>
+<summary>
+emacs
+</summary>
+
+### vim
+![vim](vim-emacs-01.svg)
+
+### vim
+![vim](vim-emacs-02.svg)
+
+</details>
+<details>
+<summary>
+erlang
+</summary>
+
+### elixir
+![elixir](elixir-erlang.png)
+
+</details>
+<details>
+<summary>
+esbuild
+</summary>
+
+### webpack
+![webpack](webpack-esbuild.png)
+
+</details>
+<details>
+<summary>
+fedora
+</summary>
+
+### facebook
+![facebook](facebook-fedora.svg)
+
+</details>
+<details>
+<summary>
+github
+</summary>
+
+### gitlab
+![gitlab](gitlab-github.svg)
+
+</details>
+<details>
+<summary>
+gitlab
+</summary>
+
+### github
+![github](github-gitlab.svg)
+
+</details>
+<details>
+<summary>
+go
+</summary>
+
+### python
+![python](python-go.svg)
+
+### rust
+![rust](rust-go.svg)
+
+</details>
+<details>
+<summary>
+google
+</summary>
+
+### stackoverflow
+![stackoverflow](stackoverflow-google.svg)
+
+</details>
+<details>
+<summary>
+gtk
+</summary>
+
+### qt
+![qt](qt-gtk.svg)
+
+</details>
+<details>
+<summary>
+halflife2
+</summary>
+
+### racket
+![racket](racket-halflife2.svg)
+
+</details>
+<details>
+<summary>
+helix
+</summary>
+
+### neovim
+![neovim](neovim-helix.svg)
+
+</details>
+<details>
+<summary>
+huawei
+</summary>
+
+### samsung
+![samsung](samsung-huawei.svg)
+
+</details>
+<details>
+<summary>
+intellij
+</summary>
+
+### vi
+![vi](vi-intellij.svg)
+
+### visualstudio
+![visualstudio](visualstudio-intellij.svg)
+
+</details>
+<details>
+<summary>
+java
+</summary>
+
+### javascript
+![javascript](javascript-java.svg)
+
+</details>
+<details>
+<summary>
+jira
+</summary>
+
+### teams
+![teams](teams-jira.svg)
+
+</details>
+<details>
+<summary>
+kotlin
+</summary>
+
+### dart
+![dart](dart-kotlin.svg)
+
+</details>
+<details>
+<summary>
+kubernetes
+</summary>
+
+### shellscript
+![shellscript](shellscript-kubernetes.svg)
+
+</details>
+<details>
+<summary>
+latex
+</summary>
+
+### apple
+![apple](apple-latex.svg)
+
+</details>
+<details>
+<summary>
+manjaro
+</summary>
+
+### fedora
+![fedora](fedora-manjaro.svg)
+
+</details>
+<details>
+<summary>
+mariadb
+</summary>
+
+### mysql
+![mysql](mysql-mariadb.svg)
+
+</details>
+<details>
+<summary>
+matplotlib
+</summary>
+
+### ggplot2
+![ggplot2](ggplot2-matplotlib.svg)
+
+</details>
+<details>
+<summary>
+mongodb
+</summary>
+
+### mysql
+![mysql](mysql-mongodb.svg)
+
+### postgresql
+![postgresql](postgresql-mongodb.svg)
+
+</details>
+<details>
+<summary>
+mysql
+</summary>
+
+### mariadb
+![mariadb](mariadb-mysql.svg)
+
+</details>
+<details>
+<summary>
+neovim
+</summary>
+
+### helix
+![helix](helix-neovim.svg)
+
+### jetbrains
+![jetbrains](jetbrains-neovim.svg)
+
+</details>
+<details>
+<summary>
+nodejs
+</summary>
+
+### rust
+![rust](rust-nodejs.svg)
+
+</details>
+<details>
+<summary>
+nordvpn
+</summary>
+
+### openvpn
+![openvpn](openvpn-nordvpn.svg)
+
+</details>
+<details>
+<summary>
+npm
+</summary>
+
+### lisp
+![lisp](lisp-npm.svg)
+
+### pip
+![pip](pip-npm.svg)
+
+</details>
+<details>
+<summary>
+perl
+</summary>
+
+### haskell
+![haskell](haskell-perl.svg)
+
+</details>
+<details>
+<summary>
+php
+</summary>
+
+### dotnet
+![dotnet](dotnet-php.svg)
+
+### postgresql
+![postgresql](postgresql-php.svg)
+
+### python
+![python](python-php.svg)
+
+### zig
+![zig](zig-php.svg)
+
+</details>
+<details>
+<summary>
+python
+</summary>
+
+### brainfuck
+![brainfuck](brainfuck-python.svg)
+
+### php
+![php](php-python.svg)
+
+### ruby
+![ruby](ruby-python.svg)
+
+</details>
+<details>
+<summary>
+pytorch
+</summary>
+
+### tensorflow
+![tensorflow](tensorflow-pytorch.svg)
+
+</details>
+<details>
+<summary>
+r
+</summary>
+
+### rust
+![rust](rust-r.png)
+
+</details>
+<details>
+<summary>
+rabbitmq
+</summary>
+
+### kafka
+![kafka](kafka-rabbitmq.svg)
+
+</details>
+<details>
+<summary>
+rails
+</summary>
+
+### django
+![django](django-rails.svg)
+
+### spring
+![spring](spring-rails.svg)
+
+</details>
+<details>
+<summary>
+reactjs
+</summary>
+
+### atom
+![atom](atom-reactjs.svg)
+
+### gtk
+![gtk](gtk-reactjs.svg)
+
+</details>
+<details>
+<summary>
+reddit
+</summary>
+
+### twitter
+![twitter](twitter-reddit.png)
+
+</details>
+<details>
+<summary>
+redhat
+</summary>
+
+### suse
+![suse](suse-redhat.svg)
+
+</details>
+<details>
+<summary>
+rust
+</summary>
+
+### cpp
+![cpp](cpp-rust.svg)
+
+### go
+![go](go-rust.svg)
+
+### r
+![r](r-rust.png)
+
+</details>
+<details>
+<summary>
+scala
+</summary>
+
+### cpp
+![cpp](cpp-scala.svg)
+
+</details>
+<details>
+<summary>
+signal
+</summary>
+
+### threema
+![threema](threema-signal.svg)
+
+</details>
+<details>
+<summary>
+sklearn
+</summary>
+
+### tensorflow
+![tensorflow](tensorflow-sklearn.svg)
+
+</details>
+<details>
+<summary>
+skype
+</summary>
+
+### discord
+![discord](discord-skype-01.svg)
+
+### discord
+![discord](discord-skype-02.svg)
+
+</details>
+<details>
+<summary>
+stackoverflow
+</summary>
+
+### google
+![google](google-stackoverflow.svg)
+
+</details>
+<details>
+<summary>
+sublimetext
+</summary>
+
+### vscode
+![vscode](vscode-sublimetext.svg)
+
+</details>
+<details>
+<summary>
+suse
+</summary>
+
+### redhat
+![redhat](redhat-suse.svg)
+
+</details>
+<details>
+<summary>
+swift
+</summary>
+
+### objectivec
+![objectivec](objectivec-swift.png)
+
+</details>
+<details>
+<summary>
+tensorflow
+</summary>
+
+### pytorch
+![pytorch](pytorch-tensorflow.svg)
+
+</details>
+<details>
+<summary>
+ubuntu
+</summary>
+
+### debian
+![debian](debian-ubuntu.svg)
+
+</details>
+<details>
+<summary>
+vim
+</summary>
+
+### vscode
+![vscode](vscode-vim.svg)
+
+</details>
+<details>
+<summary>
+wordpress
+</summary>
+
+### bootstrap
+![bootstrap](bootstrap-wordpress.svg)
+
+### rails
+![rails](rails-wordpress.svg)
 
 </details>
 </details>

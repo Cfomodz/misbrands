@@ -122,16 +122,24 @@ there is already an `emacs-vim.svg` in the repo. Name your file `emacs-vim-02.sv
 
 <details>
 <summary>
-Misbrands
+Misbrands by Text
 </summary>
 
-(misbrands-as-md)
+(misbrands-by-text-as-md)
+</details>
+
+<details>
+<summary>
+Misbrands by Style
+</summary>
+
+(misbrands-by-style-as-md)
 </details>
 "
   | save -f README.md
 }
 
-export def misbrands-as-md [] {
+export def misbrands-by-text-as-md [] {
   misbrands
   | group-by --to-table text
   | each {|it|
@@ -141,7 +149,7 @@ export def misbrands-as-md [] {
       $it.text
       '</summary>'
       ''
-      ...($it.items | each { misbrand-as-md })
+      ...($it.items | each { misbrand-by-text-as-md })
       '</details>'
     ]
   }
@@ -149,8 +157,31 @@ export def misbrands-as-md [] {
   | str join (char newline)
 }
 
-export def misbrand-as-md [] {
+export def misbrand-by-text-as-md [] {
   $"### ($in.style)(char newline)![($in.style)]\(($in.path))(char newline)"
+}
+
+export def misbrands-by-style-as-md [] {
+  misbrands
+  | sort-by style text
+  | group-by --to-table style
+  | each {|it|
+    [
+      '<details>'
+      '<summary>'
+      $it.style
+      '</summary>'
+      ''
+      ...($it.items | each { misbrand-by-style-as-md })
+      '</details>'
+    ]
+  }
+  | flatten
+  | str join (char newline)
+}
+
+export def misbrand-by-style-as-md [] {
+  $"### ($in.text)(char newline)![($in.text)]\(($in.path))(char newline)"
 }
 
 export def misbrands [] {
